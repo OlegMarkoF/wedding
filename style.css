@@ -67,6 +67,7 @@ h2 {
 .hero .date {
   font-size: calc(var(--index) * 3);
   color: var(--accent);
+  font-family: "as";
 }
 .hero p {
   max-width: 800px;
