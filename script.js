@@ -2,7 +2,7 @@ const BOT_TOKEN = "8381550218:AAEs2RgcZxOXAKAJva2PHzeC-ahnk-yD2cs"; // ← ВС�
 const CHAT_ID = "228516010"; // ← ВСТАВЬ СВОЙ CHAT ID
 
 // Обратный отсчёт
-const weddingDate = new Date("2026-07-10T15:00:00+03:00").getTime();
+const weddingDate = new Date("2026-07-10T15:00:00+02:00").getTime();
 
 function updateTimer() {
   const now = new Date().getTime();
