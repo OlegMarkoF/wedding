@@ -16,7 +16,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   overflow-x: hidden;
 }
 .container {
@@ -277,7 +277,7 @@ button[type="submit"]:hover {
 }
 
 footer {
-  padding: 60px 0 100px;
+  padding: 40px 0 60px;
   font-size: 1.1rem;
   opacity: 0.8;
 }
