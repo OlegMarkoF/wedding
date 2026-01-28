@@ -140,7 +140,7 @@ h2 {
   position: relative;
   display: inline-block;
 } */
-h2:after {
+/* h2:after {
   content: "";
   position: absolute;
   bottom: -12px;
@@ -149,7 +149,7 @@ h2:after {
   width: 70px;
   height: 2px;
   background: var(--accent);
-}
+} */
 
 .schedule ul {
   list-style: none;
