@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Caravan";
+  src: url("./fonts/Caravan.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTTsars";
+  src: url("./fonts/TTTsarsC-Regular.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "as";
+  src: url("./fonts/H4clBXOCl9bbnla_nHIq75u9.woff2") format("woff2");
+  font-style: normal;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Максим & Елизавета | 25.07.2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <button class="music-btn" id="musicToggle">♪ Включить музыку</button>
+
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    <!-- Замени на свою романтическую мелодию -->
+  </audio>
+
+  <section class="hero">
+    <div class="container">
+      <h1>МАКСИМ</h1>
+      <h1>ЕЛИЗАВЕТА</h1>
+      <h2>Чудесный день, когда мы станем семьей!</h2>
+      <p class="date">25.07.2025</p>
+      <p>Дорогие гости!</p>
+      <p>В нашей жизни предстоят счастливые перемены! Мы хотим, чтобы в этот день рядом с нами были самые близкие и
+        дорогие для нас люди. Будем рады разделить с вами чудесный праздник в день нашей свадьбы, которая состоится:</p>
+      <p>Мы приглашаем Вас с нами разделить этот особенный день</p>
+    </div>
+  </section>
+
+  <section class="countdown">
+    <div class="container">
+      <h2>Ждем Вас через</h2>
+      <div class="timer" id="timer">
+        <div class="timer-box"><span id="days">00</span>
+          <div class="label">Дней</div>
+        </div>
+        <div class="timer-box"><span id="hours">00</span>
+          <div class="label">Часов</div>
+        </div>
+        <div class="timer-box"><span id="minutes">00</span>
+          <div class="label">Минут</div>
+        </div>
+        <div class="timer-box"><span id="seconds">00</span>
+          <div class="label">Секунд</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <div class="container">
+      <h2>РАСПИСАНИЕ ДНЯ</h2>
+      <ul>
+        <li>
+          <strong>15:00 БРАКОСОЧЕТАНИЕ В ЗАГСе</strong>
+          <p>Приготовьте свои платочки для самого трогательного момента</p>
+        </li>
+        <li>
+          <strong>15:30 ФОТОСЕССИЯ. ПРОГУЛКА НА МАШИНАХ</strong>
+          <p>Никто не останется без ярких фото на память</p>
+        </li>
+        <li>
+          <strong>17:30 СВАДЕБНЫЙ БАНКЕТ</strong>
+          <p>Будем много танцев, веселья, поздравлений и, конечно, любви</p>
+        </li>
+      </ul>
+      <p>Локация: Ресторан «Лена», Набережная, 95</p>
+      <a href="https://yandex.ru/maps/org/lena/224356453516/?ll=114.914063%2C60.712147&z=16" target="_blank"
+        style="color:var(--accent);">Открыть на карте →</a>
+    </div>
+  </section>
+
+  <section class="dress-code">
+    <div class="container">
+      <h2>ДРЕСС-КОД</h2>
+      <p>Мы очень старались сделать этот вечер красивым, поэтому будем рады, если вы поддержите нас своими прекрасными
+        нарядами в стиле торжества</p>
+      <p>Мы подготовили несколько примеров образов для вашего вдохновения:</p>
+      <p><strong>Для женщин:</strong> коктейльные / вечерние платья, элегантные комбинезоны, костюмы в пастельных или
+        золотых тонах.</p>
+      <p><strong>Для мужчин:</strong> костюм (можно без галстука), смокинг, рубашка + жилет в тон свадьбы.</p>
+    </div>
+  </section>
+
+  <section class="wishes">
+    <div class="container">
+      <h2>ПОЖЕЛАНИЯ</h2>
+      <p>Сразу после свадьбы мы улетаем в свадебное путешествие, поэтому очень просим вас не дарить нам цветы, ведь мы
+        не успеем насладиться их красотой до отъезда</p>
+      <p>Мы будем счастливы видеть Вас на нашем торжестве!</p>
+      <p>С любовью, Максим и Елизавета!</p>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="container">
+      <h2>АНКЕТА ГОСТЯ</h2>
+      <p>Пожалуйста, подтвердите свое присутствие, чтобы мы могли спланировать нашу свадьбу наилучшим образом.</p>
+
+      <form id="rsvpForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Ваше имя и фамилия *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label>Сможете ли Вы присутствовать на торжестве? *</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Выберите...</option>
+          <option value="Да">Да</option>
+          <option value="Нет">Нет</option>
+        </select>
+
+        <label>Будете ли Вы присутствовать на втором дне свадьбы? *</label>
+        <select id="second_day" name="second_day" required value="">
+          <option value="">Выберите...</option>
+          <option value="Да">Да</option>
+          <option value="Нет">Нет</option>
+        </select>
+
+        <label>Предпочтения по напиткам *</label>
+        <div style="text-align: left; max-width: 500px; margin: 15px auto;">
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Не пью алкоголь"> Не пью алкоголь
+          </label>
+
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Шампанское"> Шампанское
+          </label>
+
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Белое вино"> Белое вино
+          </label>
+
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Красное вино"> Красное вино
+          </label>
+
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Водка"> Водка
+          </label>
+
+          <label class="check_drinks">
+            <input type="checkbox" name="drinks" value="Коньяк"> Коньяк
+          </label>
+        </div>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="telegram">
+    <div class="container">
+      <h2>ТЕЛЕГРАММ-ЧАТ</h2>
+      <p>Мы создали телеграмм-канал нашего торжества, где Вы сможете:</p>
+      <ul>
+        <li>• Записать кружок-поздравление для нас в день свадьбы</li>
+        <li>• Обменяться фото и видео материалами</li>
+        <li>• Получить ссылки на фото и видео отчёты по готовности</li>
+      </ul>
+      <a href="https://t.me/+NdM5RCAshx83NTVi" target="_blank" class="telegram-link">Перейти в чат гостей →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>С любовью, Максим и Елизавета ❤️<br>25 июля 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
